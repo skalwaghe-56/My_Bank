@@ -25,6 +25,10 @@ To install Shreyash’s Bank, you need to download and run the .exe file from th
 <summary>Close:</summary>
 <p>You can close your account by entering your password and confirming the action. You will receive a farewell message after your account is closed.</p>
 </details>
+<details>
+<summary>Check for updates:</summary>
+<p>You can check for updates by clicking the button check for updates and check if a newer version is available.</p>  
+</details>
 
 ## Screenshots: ##
 
