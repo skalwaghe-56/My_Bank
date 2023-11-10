@@ -32,7 +32,7 @@ To install Shreyash’s Bank, you need to download and run the .exe file from th
 
 ## Screenshots: ##
 
-### Lock 2-Steo Verifcation ###
+### Lock 2-Step Verifcation ###
 ![image](https://github.com/skalwaghe-56/My_Bank/assets/123300631/b04d3546-24b1-4973-b051-b0fdfe4fc1d7)
 
 ### Bank App's Home Page ###
@@ -57,7 +57,7 @@ To install Shreyash’s Bank, you need to download and run the .exe file from th
 Shreyash’s Bank is licensed under the Apache License 2.0. You can find the full text of the license in the LICENSE file.
 Shreyash’s Bank was created by Shreyash Kalwaghe.
 
-# Contact and Feedback#
+# Contact and Feedback #
 If you have any questions, suggestions, or feedback for Shreyash’s Bank, you can contact me through the following channels:
 
 Discord: skalwaghe56
