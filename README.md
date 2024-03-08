@@ -2,7 +2,7 @@
 Shreyash’s Bank is a banking application for people to manage their balance. It allows users to perform various operations, such as deposit, transfer, withdraw, and close their account. It also has a database at the backend to store and retrieve the user’s data.
 
 # Installation and Usage #
-To install Shreyash’s Bank, you need to download and run the .exe file from the [setup zip file](https://flared-zip.000webhostapp.com/Bank/Bank_setup.zip). This will install the application on your computer and create a shortcut on your desktop. To run Shreyash’s Bank, you need to double-click on the shortcut and enter your login credentials. If you are a new user, you need to register first by providing your name, email, and password.
+To install Shreyash’s Bank, you need to download and run the .exe file. This will install the application on your computer and create a shortcut on your desktop. To run Shreyash’s Bank, you need to double-click on the shortcut and enter your login credentials. If you are a new user, you need to register first by providing your name, email, and password.
 ![image](https://github.com/skalwaghe-56/My_Bank/assets/123300631/7685ad49-58f8-4d14-921e-f0126c024411)
 ![image](https://github.com/skalwaghe-56/My_Bank/assets/123300631/96b60f12-eb82-4023-982e-e25ac174296e)
 
