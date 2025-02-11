@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+
+{% block title %}Dashboard - Banking App{% endblock %}
+
+{% block content %}
+<h2>Welcome, {{ user.username }}!</h2>
+
+<section class="my-4">
+    <h3>Your Accounts</h3>
+    {% if accounts %}
+        <ul class="list-group">
+            {% for account in accounts %}
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <a href="{{ url_for('dashboard.view_account', account_id=account.account_id) }}">
+                        Account #{{ account.account_id }} - {{ account.account_type }}
+                    </a>
+                    <span>Balance: ${{ account.balance }}</span>
+                </li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>You do not have any accounts yet.</p>
+    {% endif %}
+    <a href="{{ url_for('dashboard.create_account') }}" class="btn btn-success mt-3">Create New Account</a>
+</section>
+
+<section class="my-4">
+    <h3>Recent Transactions</h3>
+    {% if transactions %}
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Type</th>
+                    <th>Amount</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for txn in transactions %}
+                <tr>
+                    <td>{{ txn.timestamp.strftime('%Y-%m-%d %H:%M') }}</td>
+                    <td>{{ txn.transaction_type }}</td>
+                    <td>${{ txn.amount }}</td>
+                    <td>{{ txn.description or '' }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    {% else %}
+        <p>No recent transactions.</p>
+    {% endif %}
+</section>
+{% endblock %}

@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block title %}Account Details - Banking App{% endblock %}
+
+{% block content %}
+<h2>Account #{{ account.account_id }} - {{ account.account_type }}</h2>
+<p><strong>Balance:</strong> ${{ account.balance }}</p>
+
+<section class="my-4">
+    <h3>Transactions</h3>
+    {% if transactions %}
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Type</th>
+                    <th>Amount</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for txn in transactions %}
+                <tr>
+                    <td>{{ txn.timestamp.strftime('%Y-%m-%d %H:%M') }}</td>
+                    <td>{{ txn.transaction_type }}</td>
+                    <td>${{ txn.amount }}</td>
+                    <td>{{ txn.description or '' }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    {% else %}
+        <p>No transactions found for this account.</p>
+    {% endif %}
+</section>
+{% endblock %}
